@@ -47,19 +47,6 @@
     </section>
 
     <section id="settings" class="page">
-      <h2>Gestione turni</h2>
-      <div class="card">
-        <div class="section-head"><h3>Ciclo</h3><button id="addShiftBtn">＋</button></div>
-        <div id="shiftEditor"></div>
-        <button id="resetPattern" class="secondary">Ripristina ciclo predefinito</button>
-      </div>
-      <div class="card">
-        <h3>Modifica un singolo giorno</h3>
-        <label>Data<input id="overrideDate" type="date"></label>
-        <label>Turno<select id="overrideShift"></select></label>
-        <button id="saveOverride" class="primary">Salva modifica del giorno</button>
-        <div id="overrideList"></div>
-      </div>
       <h2>Impostazioni</h2>
       <div class="card">
         <label>Inizio ciclo</label>
@@ -101,15 +88,6 @@
     <label>Luogo<input id="cLocation" placeholder="Facoltativo"></label>
     <label>Note<textarea id="cNotes" rows="3"></textarea></label>
     <button id="saveCommitment" class="primary">Salva impegno</button>
-  </div>
-</div>
-<div id="shiftModal" class="modal hidden">
-  <div class="sheet">
-    <div class="sheet-head"><h2 id="shiftModalTitle">Nuovo turno</h2><button id="closeShiftModal">✕</button></div>
-    <label>Nome<input id="sName" placeholder="Es. Giorno"></label>
-    <div class="two"><label>Inizio<input id="sStart" type="time"></label><label>Fine<input id="sEnd" type="time"></label></div>
-    <label>Ore conteggiate (minuti)<input id="sCredited" type="number" min="0" step="5"></label>
-    <button id="saveShift" class="primary">Salva turno</button>
   </div>
 </div>
 <script src="app.js"></script>
